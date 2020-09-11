@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+.container {
+  text-align: center;
+  height: 575px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: rgb(14, 13, 13);
+  transition: all 0.5s;
+  box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+}
+
+.image {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  box-shadow: 24px -4px 300px 41px rgba(245, 233, 245, 1);
+}
+h1 {
+  color: white;
+  transition: all 1s;
+}
+h2,
+h5 {
+  color: white;
+  font-weight: 900;
+  transition: all 1s;
+}
+.info {
+  color: white;
+  font-weight: bolder;
+}
+
+button {
+  margin-top: 50px;
+  margin-left: 10px;
+  color: white;
+  height: 30px;
+  width: 70px;
+  text-align: center;
+  font-size: 3rem;
+  transition: all 0.5s;
+  background: transparent;
+  border: transparent;
+  outline: transparent;
+}
+button:hover {
+  color: blue;
+}
+
+hr {
+  width: 90px;
+  margin: auto;
+  height: 4px;
+  border: transparent;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.give {
+  text-align: center;
+  height: 550px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transition: all 0.5s;
+  transform: translate(-50%, -50%);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: rgb(44, 40, 40);
+  box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+}
+
+label {
+  color: white;
+}
+
+.save1 {
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 70px;
+}
+@media (max-width: 1300px) {
+  .container {
+    text-align: center;
+    height: 575px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: rgb(14, 13, 13);
+    box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+  }
+
+  .give {
+    text-align: center;
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(44, 40, 40);
+    box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    text-align: center;
+    height: 570px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: rgb(14, 13, 13);
+    box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+  }
+
+  .give {
+    text-align: center;
+    height: 575px;
+    width: 400px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(44, 40, 40);
+    box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+  }
+
+  button {
+    margin-top: 50px;
+    margin-left: 10px;
+    color: white;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.5s;
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+  }
+
+  h1 {
+    color: white;
+    font-size: 24px;
+  }
+  h2,
+  h5 {
+    color: white;
+    font-weight: bolder;
+  }
+  .info {
+    color: white;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    text-align: center;
+    height: 570px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: rgb(14, 13, 13);
+    box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+  }
+
+  .give {
+    text-align: center;
+    height: 575px;
+    width: 300px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(44, 40, 40);
+    box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
+  }
+
+  button {
+    margin-top: 50px;
+    margin-left: 10px;
+    color: white;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.5s;
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+  }
+
+  h1 {
+    color: white;
+    font-size: 24px;
+  }
+  h2,
+  h5 {
+    color: white;
+    font-weight: bolder;
+  }
+  .info {
+    color: white;
+    font-weight: normal;
+  }
+}
