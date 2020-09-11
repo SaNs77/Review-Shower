@@ -1,38 +1,38 @@
-// const reviews = [
-//   {
-//     id: 1,
-//     name: "Sandesh Pokhrel",
-//     job: "Web developer",
-//     img: "images/imgsans.jpg",
-//     text:
-//       "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
-//   },
-//   {
-//     id: 2,
-//     name: "Santosh Sah",
-//     job: "Web designer",
-//     img: "images/imgsant.jpg",
-//     text:
-//       "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
-//   },
-//   {
-//     id: 3,
-//     name: "Sans Pkhrl",
-//     job: "BOSS",
-//     img: "images/imgsans1.jpg",
-//     text:
-//       "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
-//   },
-//   {
-//     id: 4,
-//     name: "Vishal Anand",
-//     job: "Intern",
-//     img: "images/imgvis.jpg",
-//     text:
-//       "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
-//   },
-// ];
-const reviews = JSON.parse(localStorage.getItem("array"));
+const reviews = [
+  {
+    id: 1,
+    name: "Sandesh Pokhrel",
+    job: "Web developer",
+    img: "images/imgsans.jpg",
+    text:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+  },
+  {
+    id: 2,
+    name: "Santosh Sah",
+    job: "Web designer",
+    img: "images/imgsant.jpg",
+    text:
+      "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+  },
+  {
+    id: 3,
+    name: "Sans Pkhrl",
+    job: "BOSS",
+    img: "images/imgsans1.jpg",
+    text:
+      "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+  },
+  {
+    id: 4,
+    name: "Vishal Anand",
+    job: "Intern",
+    img: "images/imgvis.jpg",
+    text:
+      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+  },
+];
+// const reviews = JSON.parse(localStorage.getItem("array"));
 
 const image = document.getElementById("image-id");
 const name = document.getElementById("name-id");
@@ -82,6 +82,8 @@ const name11 = document.getElementById("name1");
 const job11 = document.getElementById("job1");
 const info11 = document.getElementById("info1");
 const save = document.getElementById("save");
+const feed = document.querySelector(".give");
+const main = document.querySelector(".container");
 
 save.addEventListener("click", function () {
   var newPerson = {
@@ -91,8 +93,11 @@ save.addEventListener("click", function () {
     img: image11.value,
     text: info11.value,
   };
-
+  feed.classList.add("dntshow");
+  main.classList.add("center");
+  console.log(main.classList);
   reviews.push(newPerson);
-  location.reload();
-  localStorage.setItem("array", JSON.stringify(reviews));
+
+  // location.reload();
+  // localStorage.setItem("array", JSON.stringify(reviews));
 });

@@ -6,6 +6,10 @@
 body {
   background: white;
 }
+.dntshow {
+  display: none;
+}
+
 .container {
   text-align: center;
   height: 575px;
@@ -22,7 +26,12 @@ body {
   transition: all 0.5s;
   box-shadow: -18px -51px 300px 92px rgba(0, 0, 0, 0.75);
 }
-
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .image {
   height: 175px;
   width: 175px;
